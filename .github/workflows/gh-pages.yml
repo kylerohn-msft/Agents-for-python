@@ -56,7 +56,7 @@ jobs:
       - name: Build Docs
         run: |
           cd docs
-          mkdir _static
+          mkdir './source/_static'
           make html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
